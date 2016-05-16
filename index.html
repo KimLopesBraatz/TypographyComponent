@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="typographyApp">
+
+<head>
+<script src="lib/angular/angular.min.js"></script>
+<script src="js/app.js"></script>
+
+<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<title>Typography Component</title>
+
+</head>
+<body ng-controller="appCtrl">
+
+<h2 id="h2">Typography Component with AngularJS</h2>
+<h5 id="h5">Edit your text!</h5>
+
+<div class="format">
+  <div class="fontStyles">
+    <label class="labelFormat">Font Styles</label> <br>
+    <button class="btn btn-small btn-primary" id="bold" ng-click="setBold(sentence)">N</button>
+    <button class="btn btn-small btn-primary" id="italic" ng-click="setItalic(sentence)">I</button>
+    <button class="btn btn-small btn-primary" id="underline" ng-click="setUnderline(sentence)">S</button>
+    <button class="btn btn-small btn-primary" id="strikethrough" ng-click="setStrikethrought(sentence)">abc</button>
+
+    <select id="selectFont" ng-model="myFontFamily" ng-change="changeFont(myFontFamily)">
+      <option value="">Select a font family</option>
+      <option ng-repeat="font in fonts" value="{{font.value}}" ng-selected="{{font.value == myFontFamily}}">
+        {{font.name}}
+      </option>
+    </select>
+
+    <input type="number" id="fontSize" ng-model="fontSize" class="input" min="8" max="72" ng-click="setFontSize(fontSize)"></input> <br>
+  </div>
+
+  <div class="textAlign">
+    <label class="labelFormat">Text Alignment</label> <br>
+    <button class="btn btn-small btn-primary" ng-click="setTextAlignLeft(sentence)">
+      <span class="glyphicon glyphicon-align-left"></span>
+    </button>
+    <button class="btn btn-small btn-primary" ng-click="setTextAlignRight(sentence)">
+      <span class="glyphicon glyphicon-align-right"></span>
+    </button>
+    <button class="btn btn-small btn-primary" ng-click="setTextAlignCenter(sentence)">
+      <span class="glyphicon glyphicon-align-center"></span>
+    </button>
+    <button class="btn btn-small btn-primary" ng-click="setTextAlignJustify(sentence)">
+      <span class="glyphicon glyphicon-align-justify"></span>
+    </button>
+  </div>
+
+</div>
+
+<div class="sentence">
+  <input type="text" id="sentenceId" class="form-control input-lg" placeholder="Insert a sentence!" ng-model="sentence" class="input"> <br>
+  <div class="output">
+    <p id="result">{{sentence}}</p>
+  </div>
+</div>
+
+</body>
+</html>

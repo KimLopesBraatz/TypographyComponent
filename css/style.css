@@ -1,0 +1,84 @@
+body{
+	background-color: #ADD8E6;
+}
+
+.format{
+	margin-top: 2%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.fontStyles{
+	text-align: center;
+	float: left;
+	width: 50%;
+}
+
+.textAlign{
+	text-align: center;
+	margin-left: 50%;
+}
+
+.sentence{
+	margin-top: 2%;
+	padding-right: 15px;
+    padding-left: 15px;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.output{
+	border: solid;
+	color: #B0C4DE;
+	border-width: 1px;
+	padding-right: 15px;
+    padding-left: 15px;
+    height: 350px;
+    background-color: #FFFFFF;
+}
+
+#h2{
+	text-align: center;
+	color: blue;
+	font-family: "Comic Sans";
+}
+
+#h5{
+	text-align: center;
+	color: blue;
+	font-style: oblique;
+}
+
+#sentenceId{
+	margin-top: 10px;
+}
+
+#bold{
+	font-weight: bold;
+}
+
+#italic{
+	font-style: italic;
+}
+
+#underline{
+	text-decoration: underline;
+}
+
+#strikethrough{
+	text-decoration: line-through;
+}
+
+#selectFont{
+	font-size: 18px;
+}
+
+#fontSize{
+	font-size: 16px;
+}
+
+.labelFormat{
+	font-size: 22px;
+	color: #008B8B;
+	font-family: "Bookman";
+}

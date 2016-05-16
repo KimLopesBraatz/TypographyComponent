@@ -1,0 +1,21 @@
+{
+  "name": "TypographyComponent",
+  "authors": [
+    "Wanzeller Kim Lopes Braatz <wanzeller.scabbia@gmail.com>"
+  ],
+  "description": "A typography component with AngularJS",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.5"
+  }
+}
